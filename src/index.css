@@ -269,3 +269,21 @@ html {
   bottom: 0;
   right: 7.25rem;
 }
+
+.footer {
+  width: 11.6rem;
+  height: 10.2rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 11rem;
+}
+
+.social {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
