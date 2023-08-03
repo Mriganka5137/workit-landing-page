@@ -1,13 +1,271 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "Fraunces";
+  src: url("./assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "Manrope";
+  src: url("./assets/fonts/manrope/Manrope-VariableFont_wght.ttf");
+}
+
+:root {
+  --color-dark-purple: #24053e;
+  --color-davy-grey: #584d62;
+  --color-eucaplyptus: #44ffa1;
+  --color-ghost-white: #fcf8ff;
+  --color-white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+  position: relative;
+  /* overflow-x: hidden; */
+}
+
+.header {
+  /* background-color: var(--color-dark-purple); */
+  background-image: url("assets/images/background1.svg");
+  padding: 5.7rem 16rem;
+  display: flex;
+  flex-direction: column;
+  height: 73rem;
+  position: relative;
+  /* z-index: 1; */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar img {
+  width: 9.5rem;
+  height: 2.4rem;
+}
+
+.apply {
+  font-family: "Manrope";
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.22rem;
+  color: var(--color-white);
+  border-bottom: 2px solid var(--color-eucaplyptus);
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+
+.apply:hover {
+  color: var(--color-eucaplyptus);
+}
+
+.primary-heading {
+  font-family: "Fraunces";
+  font-size: 8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 8rem; /* 100% */
+  color: var(--color-white);
+  text-align: center;
+  margin-top: 6.3rem;
+}
+
+.primary-heading span {
+  display: inline-block;
+  border-bottom: 3px solid var(--color-eucaplyptus);
+  padding-bottom: -1rem;
+}
+
+.btn-learn {
+  background: none;
+  border-style: none;
+  display: block;
+  margin: 0 auto;
+  font-family: "Manrope";
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.2rem; /* 177.778% */
+  letter-spacing: -0.18px;
+  padding: 1.3rem 3.2rem;
+  color: var(--color-dark-purple);
+  background-color: var(--color-eucaplyptus);
+  border: 2px solid var(--color-eucaplyptus);
+  margin-top: 3.7rem;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+
+.btn-learn:hover {
+  background-color: var(--color-dark-purple);
+  color: var(--color-eucaplyptus);
+  border: 2px solid var(--color-eucaplyptus);
+}
+
+.hero-img {
+  width: 71.5rem;
+  margin: 5rem auto;
+}
+
+.pattern1 {
+  width: 27rem;
+  position: absolute;
+  top: 11.6rem;
+  left: -13.8rem;
+}
+
+.pattern2 {
+  width: 14rem;
+  position: absolute;
+  top: 31.4rem;
+  right: -4.8rem;
+}
+
+.feature-container {
+  background-image: url("assets/images/background2.svg");
+  height: 96rem;
+  margin-top: -22.6rem;
+  z-index: 1;
+  padding-top: 48rem;
+}
+
+.feature-set {
+  margin: 0 auto;
+  max-width: 112rem;
+  display: flex;
+  gap: 2.6rem;
+}
+
+.feature {
+  z-index: 5;
+  /* margin-top: 48rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.number-circle {
+  width: 5.6rem;
+  height: 5.6rem;
+  border: 1px solid var(--color-davy-grey);
+  border-radius: 30.5px;
+  position: relative;
+}
+
+.number {
+  font-size: 2.4rem;
+  text-align: center;
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 4rem; /* 166.667% */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.feature h2 {
+  font-family: "Fraunces";
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 4rem;
+  margin-top: 5.6rem;
+  text-align: center;
+  color: var(--color-dark-purple);
+  margin-bottom: 2.8rem;
+}
+
+.feature p {
+  font-family: "Manrope";
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.2rem; /* 177.778% */
+  text-align: center;
+}
+
+.testimonial {
+  max-width: 111.2rem;
+  height: 64.7rem;
+  margin: 0 auto;
+  margin-top: 11rem;
+  position: relative;
+  margin-bottom: 6rem;
+}
+
+.profile-container img {
+  width: 47.7rem;
+  height: 47.7rem;
+  background-color: var(--color-eucaplyptus);
+  border-radius: 50%;
+}
+
+.review-box {
+  width: 73rem;
+  /* height: 41.3rem; */
+  background-color: var(--color-dark-purple);
+  position: absolute;
+  top: 17.3rem;
+  right: 0;
+  padding: 6.4rem;
+}
+
+.review-box h3 {
+  color: var(--color-white);
+  font-family: "Fraunces";
+  font-size: 5.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 6.4rem; /* 114.286% */
+  margin-bottom: 3.2rem;
+}
+
+.review-box p {
+  color: var(--color-white);
+  font-family: "Manrope";
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.2rem; /* 177.778% */
+  margin-bottom: 3.2rem;
+}
+
+.review-btn {
+  border: none;
+  background: none;
+  background-color: var(--color-eucaplyptus);
+  color: var(--color-dark-purple);
+  padding: 1.5rem 2.5rem;
+  font-size: 1.8rem;
+  font-family: "Manrope";
+  font-weight: 700;
+  line-height: 3.2rem;
+  letter-spacing: -0.18px;
+  border: 2px solid var(--color-eucaplyptus);
+  transition: all 500ms ease-in-out;
+}
+
+.review-btn:hover {
+  background-color: var(--color-dark-purple);
+  color: var(--color-eucaplyptus);
+  border: 2px solid var(--color-eucaplyptus);
+}
+
+.pattern3 {
+  position: absolute;
+  bottom: 0;
+  right: 7.25rem;
 }
