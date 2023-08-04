@@ -1,5 +1,4 @@
 import logo from "./assets/images/logo-light.svg";
-import hero from "./assets/images/image-hero.webp";
 
 function Header() {
   return (
@@ -13,7 +12,6 @@ function Header() {
         <br /> your needs.
       </h1>
       <button className="btn-learn">Learn more</button>
-      <img src={hero} alt="hero" className="hero-img" />
     </div>
   );
 }

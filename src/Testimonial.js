@@ -15,8 +15,8 @@ function Testimonial() {
           call.
         </p>
         <button className="review-btn">Apply for access</button>
+        <img src={pattern3} alt="pattern" className="pattern3" />
       </div>
-      <img src={pattern3} alt="pattern" className="pattern3" />
     </section>
   );
 }
