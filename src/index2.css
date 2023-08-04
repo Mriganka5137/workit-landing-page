@@ -1,0 +1,146 @@
+@media only screen and (max-width: 375px) {
+  html {
+    font-size: 31.25%;
+  }
+
+  .header {
+    padding: 6.4rem 3.2rem;
+  }
+
+  .navbar > img {
+    width: 19.15rem;
+    height: 4.92rem;
+  }
+
+  .apply {
+    font-size: 3.2rem;
+    padding-bottom: 1rem;
+  }
+  .primary-heading {
+    margin-top: 13.67rem;
+    font-size: 10rem;
+    line-height: 10rem;
+    text-align: center;
+  }
+
+  .primary-heading > span {
+    padding-bottom: 0.5rem;
+  }
+
+  .pattern1 {
+    display: none;
+  }
+
+  .pattern2 {
+    display: none;
+  }
+
+  .btn-learn {
+    margin-top: 8rem;
+    font-size: 3.2rem;
+  }
+  .break {
+    display: none;
+  }
+
+  .hero-img {
+    width: 64rem;
+    top: 77.8rem;
+  }
+
+  .header:before {
+    transform: scaleX(5);
+  }
+
+  .feature-container {
+    padding-top: 50rem;
+    padding-bottom: 14.2rem;
+  }
+
+  .feature-container:before {
+    transform: scaleX(5);
+  }
+
+  .feature-set {
+    max-width: 68.6rem;
+    gap: 8rem;
+  }
+
+  .feature {
+    flex-direction: column;
+  }
+  .feature-details h2 {
+    text-align: center;
+    font-size: 5.6rem;
+  }
+  .feature-details p {
+    text-align: center;
+    font-size: 3.2rem;
+    line-height: 5.6rem;
+  }
+
+  .number-circle {
+    width: 9.6rem;
+    height: 9.6rem;
+  }
+
+  .number {
+    font-size: 4rem;
+  }
+
+  .testimonial {
+    margin: 3.2rem;
+    position: relative;
+  }
+  .profile-container {
+    width: 68.6rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .profile-container img {
+    width: 56.2rem;
+  }
+
+  .review-box {
+    width: 100%;
+    /* top: 45.6rem;
+     */
+    position: relative;
+    margin-top: -25.6rem;
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .review-box h3 {
+    font-size: 6.4rem;
+    text-align: center;
+  }
+
+  .review-box p {
+    font-size: 3.2rem;
+    line-height: 5.6rem;
+    text-align: center;
+    font-weight: 400;
+  }
+
+  .review-btn {
+    font-size: 3.2rem;
+    padding: 2.4rem 4.7rem;
+    max-width: 35.4rem;
+  }
+
+  .pattern3 {
+    display: none;
+  }
+
+  .footer {
+    margin-top: 25.4rem;
+    width: 23rem;
+    gap: 10rem;
+    margin-bottom: 20.6rem;
+  }
+}

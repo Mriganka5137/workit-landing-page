@@ -9,7 +9,7 @@ function Header() {
       </nav>
       <h1 className="primary-heading">
         Data <span> tailored</span> to
-        <br /> your needs.
+        <br className="break" /> your needs.
       </h1>
       <button className="btn-learn">Learn more</button>
     </div>

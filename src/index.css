@@ -197,6 +197,7 @@ html {
 }
 
 .feature-details p {
+  color: var(--color-davy-grey);
   font-family: "Manrope";
   font-size: 1.8rem;
   font-style: normal;
